@@ -183,6 +183,16 @@ function mmm()
     fi
 }
 
+function mma()
+{
+  mm "$@"
+}
+
+function mmma()
+{
+  mmm "$@"
+}
+
 function refreshmod()
 {
     # In real AOSP this updates module-info.json. Here we run m with list-modules which we hooked up to generate it.

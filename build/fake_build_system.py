@@ -190,6 +190,28 @@ def main():
     # Always generate module-info.json as it's a common artifact needed by tools
     json_path = generate_module_info(modules_map, root_dir)
 
+    targets = [arg for arg in sys.argv[1:] if not arg.startswith("-")]
+
+    # Handle clean targets
+    if "clean" in targets:
+        print(f"{Colors.OKBLUE}Cleaning entire out directory...{Colors.ENDC}")
+        out_dir = os.path.join(root_dir, "out")
+        if os.path.exists(out_dir):
+            import shutil
+            shutil.rmtree(out_dir)
+        print("Entire build directory removed.")
+        return
+
+    if "installclean" in targets:
+        print(f"{Colors.OKBLUE}Cleaning installed files...{Colors.ENDC}")
+        # In this sim, we just nuking product target dir
+        target_out = os.path.join(root_dir, "out", "target")
+        if os.path.exists(target_out):
+            import shutil
+            shutil.rmtree(target_out)
+        print("Installed files removed.")
+        return
+
     if "--list-modules" in sys.argv:
         # User requested specific list output, but hinted they want "actual AOSP display"
         # Since AOSP doesn't have a standard CLI list, we might just print the keys 

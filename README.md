@@ -63,6 +63,44 @@ Builds every module defined in the tree (similar to `allmod` make target).
 m all_modules
 ```
 
+### `m clean`
+Deletes the entire `out/` directory.
+```bash
+m clean
+```
+
+### `m installclean`
+Deletes only the files that were copied from the intermediate area to the final images.
+```bash
+m installclean
+```
+
+### `mm`
+Builds all of the modules in the current directory.
+```bash
+cd system/core
+mm
+```
+
+### `mmm`
+Builds all of the modules in the supplied directory available.
+```bash
+mmm system/core
+```
+
+### `mma`
+Builds all of the modules in the current directory (aliased to `mm` in this simulation).
+```bash
+cd system/core
+mma
+```
+
+### `mmma`
+Builds all of the modules in the supplied directory (aliased to `mmm` in this simulation).
+```bash
+mmma system/core
+```
+
 ## Helper Commands
 
 The environment provides standard AOSP helper commands to query module information.
