@@ -1,0 +1,14 @@
+
+cc_binary {
+    name: "vendor_service",
+    srcs: ["service.cpp"],
+    vendor: true,
+    shared_libs: ["liblog", "libcutils"],
+}
+
+android_app {
+    name: "VendorApp",
+    srcs: ["src/**/*.java"],
+    vendor: true,
+    certificate: "platform",
+}

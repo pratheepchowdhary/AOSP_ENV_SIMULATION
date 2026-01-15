@@ -1,0 +1,21 @@
+
+cc_library {
+    name: "liblog",
+    srcs: ["liblog/*.cpp"],
+    host_supported: true,
+    recovery_available: true,
+    min_sdk_version: "29",
+}
+
+cc_library {
+    name: "libcutils",
+    srcs: ["libcutils/*.cpp"],
+    shared_libs: ["liblog"],
+    min_sdk_version: "29",
+}
+
+cc_binary {
+    name: "adbd",
+    srcs: ["adb/*.cpp"],
+    static_libs: ["liblog", "libcutils"],
+}

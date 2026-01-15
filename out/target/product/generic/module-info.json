@@ -1,0 +1,137 @@
+{
+  "liblog": {
+    "class": [
+      "SHARED_LIBRARIES"
+    ],
+    "path": [
+      "system/core"
+    ],
+    "tags": [
+      "optional"
+    ],
+    "installed": [
+      "/Users/pratheepkanati/IdeaProjects/Aospsimultion/out/target/product/generic/system/lib64/liblog.fake"
+    ],
+    "module_name": "liblog"
+  },
+  "libcutils": {
+    "class": [
+      "SHARED_LIBRARIES"
+    ],
+    "path": [
+      "system/core"
+    ],
+    "tags": [
+      "optional"
+    ],
+    "installed": [
+      "/Users/pratheepkanati/IdeaProjects/Aospsimultion/out/target/product/generic/system/lib64/libcutils.fake"
+    ],
+    "module_name": "libcutils"
+  },
+  "adbd": {
+    "class": [
+      "EXECUTABLES"
+    ],
+    "path": [
+      "system/core"
+    ],
+    "tags": [
+      "optional"
+    ],
+    "installed": [
+      "/Users/pratheepkanati/IdeaProjects/Aospsimultion/out/target/product/generic/system/lib64/adbd.fake"
+    ],
+    "module_name": "adbd"
+  },
+  "framework": {
+    "class": [
+      "JAVA_LIBRARIES"
+    ],
+    "path": [
+      "frameworks/base"
+    ],
+    "tags": [
+      "optional"
+    ],
+    "installed": [
+      "/Users/pratheepkanati/IdeaProjects/Aospsimultion/out/target/product/generic/system/framework/framework.fake"
+    ],
+    "module_name": "framework"
+  },
+  "services": {
+    "class": [
+      "JAVA_LIBRARIES"
+    ],
+    "path": [
+      "frameworks/base"
+    ],
+    "tags": [
+      "optional"
+    ],
+    "installed": [
+      "/Users/pratheepkanati/IdeaProjects/Aospsimultion/out/target/product/generic/system/framework/services.fake"
+    ],
+    "module_name": "services"
+  },
+  "services.core": {
+    "class": [
+      "JAVA_LIBRARIES"
+    ],
+    "path": [
+      "frameworks/base"
+    ],
+    "tags": [
+      "optional"
+    ],
+    "installed": [
+      "/Users/pratheepkanati/IdeaProjects/Aospsimultion/out/target/product/generic/system/framework/services.core.fake"
+    ],
+    "module_name": "services.core"
+  },
+  "FrameworksRes": {
+    "class": [
+      "APPS"
+    ],
+    "path": [
+      "frameworks/base"
+    ],
+    "tags": [
+      "optional"
+    ],
+    "installed": [
+      "/Users/pratheepkanati/IdeaProjects/Aospsimultion/out/target/product/generic/system/framework/FrameworksRes.fake"
+    ],
+    "module_name": "FrameworksRes"
+  },
+  "vendor_service": {
+    "class": [
+      "EXECUTABLES"
+    ],
+    "path": [
+      "vendor/sample"
+    ],
+    "tags": [
+      "optional"
+    ],
+    "installed": [
+      "/Users/pratheepkanati/IdeaProjects/Aospsimultion/out/target/product/generic/system/lib64/vendor_service.fake"
+    ],
+    "module_name": "vendor_service"
+  },
+  "VendorApp": {
+    "class": [
+      "APPS"
+    ],
+    "path": [
+      "vendor/sample"
+    ],
+    "tags": [
+      "optional"
+    ],
+    "installed": [
+      "/Users/pratheepkanati/IdeaProjects/Aospsimultion/out/target/product/generic/system/framework/VendorApp.fake"
+    ],
+    "module_name": "VendorApp"
+  }
+}

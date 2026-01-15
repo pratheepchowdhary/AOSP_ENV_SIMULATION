@@ -1,0 +1,22 @@
+
+java_library {
+    name: "framework",
+    srcs: ["core/java/**/*.java"],
+    installable: true,
+}
+
+java_library {
+    name: "services",
+    srcs: ["services/java/**/*.java"],
+    static_libs: ["services.core"],
+}
+
+java_library {
+    name: "services.core",
+    srcs: ["services/core/java/**/*.java"],
+}
+
+android_app {
+    name: "FrameworksRes",
+    certificate: "platform",
+}
